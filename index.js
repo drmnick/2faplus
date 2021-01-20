@@ -1,11 +1,11 @@
 const password = document.getElementsByName('password')[0];
 const phrase = document.getElementsByName('phrase')[0];
 const shuffle = document.getElementsByName('shuffle')[0];
-const result = document.getElementsByName('result')[0];
+const result = document.getElementById('result');
 
 
 shuffle.addEventListener('click', () => {
-  result.innerHtml = password.value + phrase.value;
+  result.innerHTML = password.value + phrase.value;
 });
 
 
