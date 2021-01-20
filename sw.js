@@ -1,3 +1,9 @@
+//TODO: Remove cache delete
+caches.keys().then(function(names) {
+    for (let name of names)
+        caches.delete(name);
+});
+
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('em-store').then((cache) => cache.addAll([
