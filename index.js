@@ -1,15 +1,13 @@
-const images = ['fox1', 'fox2', 'fox3', 'fox4'];
-const imgElem = document.querySelector('img');
+const password = document.getElementsByName('password')[0];
+const phrase = document.getElementsByName('phrase')[0];
+const shuffle = document.getElementsByName('shuffle')[0];
+const result = document.getElementsByName('result')[0];
 
-function randomValueFromArray(array) {
-  const randomNo = Math.floor(Math.random() * array.length);
-  return array[randomNo];
-}
 
-setInterval(() => {
-  const randomChoice = randomValueFromArray(images);
-  imgElem.src = `images/${randomChoice}.jpg`;
-}, 2000);
+shuffle.addEventListener('click', () => {
+  result.innerHtml = password.value + phrase.value;
+});
+
 
 // Register service worker to control making site work offline
 
