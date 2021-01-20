@@ -1,15 +1,15 @@
 {
-  "background_color": "purple",
-  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "background_color": "#898F9C",
+  "description": "Go extra mile to protect your most valuable passwords.",
   "display": "fullscreen",
   "icons": [
     {
-      "src": "icon/fox-icon.png",
-      "sizes": "192x192",
+      "src": "icon/em-icon.png",
+      "sizes": "256x256",
       "type": "image/png"
     }
   ],
-  "name": "Awesome fox pictures",
-  "short_name": "Foxes",
+  "name": "Extra Mile",
+  "short_name": "Mile",
   "start_url": "/extra-mile/index.html"
 }

@@ -1,14 +1,10 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('fox-store').then((cache) => cache.addAll([
+    caches.open('em-store').then((cache) => cache.addAll([
       '/extra-mile/',
       '/extra-mile/index.html',
       '/extra-mile/index.js',
-      '/extra-mile/style.css',
-      '/extra-mile/images/fox1.jpg',
-      '/extra-mile/images/fox2.jpg',
-      '/extra-mile/images/fox3.jpg',
-      '/extra-mile/images/fox4.jpg',
+      '/extra-mile/style.css'
     ])),
   );
 });
